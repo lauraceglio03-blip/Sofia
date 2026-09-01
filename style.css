@@ -68,9 +68,8 @@ button:hover{
     transform:scale(1.08);
 
 } 
-.estrela{
 
-    .estrela{
+.estrela{
 
     position:absolute;
 
@@ -87,7 +86,6 @@ button:hover{
     animation:piscar 2s infinite;
 
 }
-}
 
 @keyframes piscar{
 
@@ -96,9 +94,6 @@ button:hover{
         opacity:.2;
 
     }
-
-}
-.lua{
 
     .lua{
 
@@ -119,7 +114,6 @@ button:hover{
     0 0 60px rgba(255,245,180,.6),
     0 0 120px rgba(255,245,180,.3);
 
-}
 }
 .lua::before{
 
@@ -242,5 +236,30 @@ opacity:1;
 transform:translateY(0);
 
 }
+.introducao{
+
+    display:none;
+
+    position:absolute;
+
+    inset:0;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+#frase{
+
+    font-size:36px;
+
+    max-width:700px;
+
+    transition:opacity 1s;
 
 }
