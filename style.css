@@ -98,3 +98,23 @@ button:hover{
     }
 
 }
+.lua{
+
+    position:absolute;
+
+    top:60px;
+    right:80px;
+
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    background:#fff7cf;
+
+    box-shadow:
+    0 0 30px #fff4b3,
+    0 0 70px #fff7cf,
+    0 0 120px rgba(255,245,180,.4);
+
+}
