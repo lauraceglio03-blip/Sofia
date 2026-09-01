@@ -45,3 +45,8 @@ function entrar(){
     },6000);
 
 }
+function abrirMemoria(){
+
+    alert("Aqui vai abrir a lembrança do CRE e do Animalia Park 😊");
+
+}
