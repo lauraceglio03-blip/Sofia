@@ -1,131 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Céu Cheio de Memórias ✨</title>
 
-<title>Para Sofia ❤️</title>
-
-<style>
-
-body{
-
-margin:0;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:linear-gradient(#081229,#000000);
-font-family:Arial;
-overflow:hidden;
-
-}
-
-h1{
-
-color:white;
-font-size:60px;
-text-align:center;
-animation: aparecer 3s;
-
-}
-
-button{
-
-margin-top:40px;
-padding:15px 35px;
-font-size:20px;
-border:none;
-border-radius:40px;
-cursor:pointer;
-background:white;
-transition:.3s;
-
-}
-
-button:hover{
-
-transform:scale(1.08);
-
-}
-
-.container{
-
-text-align:center;
-
-}
-
-@keyframes aparecer{
-
-from{
-opacity:0;
-transform:translateY(30px);
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-.estrela{
-
-position:absolute;
-background:white;
-width:2px;
-height:2px;
-border-radius:50%;
-animation: piscar 2s infinite;
-
-}
-
-@keyframes piscar{
-
-50%{
-opacity:.2;
-}
-
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<div class="inicio">
 
-<h1>Oi, Sofia ❤️</h1>
+    <h1>Um Céu Cheio de Memórias ✨</h1>
 
-<button onclick="alert('Essa é só a primeira surpresa... 💖')">
-Começar
-</button>
+    <p>
+        Existem lugares que a distância não alcança.
+    </p>
+
+    <p>
+        As lembranças são um deles.
+    </p>
+
+    <button>
+        Começar
+    </button>
 
 </div>
 
-<script>
-
-for(let i=0;i<200;i++){
-
-let estrela=document.createElement("div");
-
-estrela.className="estrela";
-
-estrela.style.left=Math.random()*100+"vw";
-
-estrela.style.top=Math.random()*100+"vh";
-
-estrela.style.animationDelay=Math.random()*2+"s";
-
-document.body.appendChild(estrela);
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
