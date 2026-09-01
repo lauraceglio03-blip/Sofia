@@ -331,3 +331,76 @@ transform:translateY(0);
     }
 
 }
+.popup{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.popup-conteudo{
+
+    width:700px;
+
+    max-width:90%;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    animation:aparecer .5s;
+
+}
+
+.popup-conteudo h2{
+
+    margin-bottom:25px;
+
+}
+
+.popup-conteudo p{
+
+    line-height:1.8;
+
+}
+
+.fechar{
+
+    float:right;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+.fechar:hover{
+
+    opacity:.6;
+
+}
+
+.frase-final{
+
+    margin-top:25px;
+
+    font-style:italic;
+
+}
