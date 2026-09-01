@@ -263,3 +263,71 @@ transform:translateY(0);
     transition:opacity 1s;
 
 }
+.estrela-memoria{
+
+    position:absolute;
+
+    top:45%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:55px;
+
+    cursor:pointer;
+
+    animation:pulsar 2s infinite;
+
+    transition:.3s;
+
+}
+
+.estrela-memoria:hover{
+
+    transform:translate(-50%,-50%) scale(1.2);
+
+}
+
+.instrucao{
+
+    position:absolute;
+
+    top:58%;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:22px;
+
+    opacity:.8;
+
+} 
+@keyframes pulsar{
+
+    0%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+        text-shadow:0 0 10px white;
+
+    }
+
+    50%{
+
+        transform:translate(-50%,-50%) scale(1.15);
+
+        text-shadow:0 0 30px gold;
+
+    }
+
+    100%{
+
+        transform:translate(-50%,-50%) scale(1);
+
+        text-shadow:0 0 10px white;
+
+    }
+
+}
