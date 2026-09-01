@@ -13,7 +13,37 @@ for(let i=0;i<150;i++){
     document.body.appendChild(estrela);
 
 }
-function entrar(){
+{function entrar() {
+
+    document.getElementById("inicio").style.display = "none";
+
+    document.getElementById("introducao").style.display = "flex";
+
+    const frase = document.getElementById("frase");
+
+    setTimeout(() => {
+
+        frase.style.opacity = "0";
+
+        setTimeout(() => {
+
+            frase.innerHTML = "E esta noite, elas decidiram brilhar outra vez.";
+
+            frase.style.opacity = "1";
+
+        }, 1000);
+
+    }, 2500);
+
+    setTimeout(() => {
+
+        document.getElementById("introducao").style.display = "none";
+
+        document.getElementById("pagina2").style.display = "block";
+
+    }, 6000);
+
+}
 
 document.getElementById("inicio").style.display="none";
 
