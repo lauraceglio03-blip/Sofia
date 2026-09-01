@@ -6,7 +6,7 @@
 
 body{
 
-    background:linear-gradient(#07111f,#13233d,#1d3557);
+    background:linear-gradient(to bottom,#050816,#0d1b38,#1f3c63);
     height:100vh;
 
     display:flex;
@@ -70,18 +70,23 @@ button:hover{
 } 
 .estrela{
 
+    .estrela{
+
     position:absolute;
 
-    width:2px;
+    width:3px;
 
-    height:2px;
+    height:3px;
 
     background:white;
 
     border-radius:50%;
 
+    box-shadow:0 0 8px white;
+
     animation:piscar 2s infinite;
 
+}
 }
 
 @keyframes piscar{
