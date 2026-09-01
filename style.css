@@ -67,4 +67,29 @@ button:hover{
 
     transform:scale(1.08);
 
+} 
+.estrela{
+
+    position:absolute;
+
+    width:2px;
+
+    height:2px;
+
+    background:white;
+
+    border-radius:50%;
+
+    animation:piscar 2s infinite;
+
+}
+
+@keyframes piscar{
+
+    50%{
+
+        opacity:.2;
+
+    }
+
 }
