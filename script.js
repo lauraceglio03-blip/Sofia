@@ -13,3 +13,10 @@ for(let i=0;i<150;i++){
     document.body.appendChild(estrela);
 
 }
+function entrar(){
+
+document.getElementById("inicio").style.display="none";
+
+document.getElementById("pagina2").style.display="block";
+
+}
