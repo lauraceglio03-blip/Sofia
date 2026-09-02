@@ -1,57 +1,13 @@
-for(let i = 0; i < 150; i++){
+const botao = document.getElementById("btnComecar");
 
-    let estrela = document.createElement("div");
+const inicio = document.getElementById("inicio");
 
-    estrela.classList.add("estrela");
+const ceu = document.getElementById("ceu");
 
-    estrela.style.left = Math.random() * 100 + "vw";
+botao.addEventListener("click", () => {
 
-    estrela.style.top = Math.random() * 100 + "vh";
+    inicio.classList.add("escondido");
 
-    estrela.style.animationDelay = Math.random() * 3 + "s";
+    ceu.classList.remove("escondido");
 
-    document.body.appendChild(estrela);
-
-}
-
-function entrar(){
-
-    document.getElementById("inicio").style.display = "none";
-
-    document.getElementById("introducao").style.display = "flex";
-
-    const frase = document.getElementById("frase");
-
-    setTimeout(function(){
-
-        frase.style.opacity = "0";
-
-        setTimeout(function(){
-
-            frase.innerHTML = "E esta noite, elas decidiram brilhar outra vez.";
-
-            frase.style.opacity = "1";
-
-        },1000);
-
-    },2500);
-
-    setTimeout(function(){
-
-        document.getElementById("introducao").style.display = "none";
-
-        document.getElementById("pagina2").style.display = "block";
-
-    },6000);
-
-function abrirMemoria(){
-
-    document.getElementById("popup").style.display = "flex";
-
-}
-
-function fecharMemoria(){
-
-    document.getElementById("popup").style.display = "none";
-
-}
+});
