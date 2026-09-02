@@ -90,3 +90,31 @@ button{
     transform:scale(1.4);
 
 }
+.estrela{
+
+    position:absolute;
+
+    font-size:28px;
+
+    animation:piscar 2s infinite;
+
+}
+
+@keyframes piscar{
+
+    0%{
+        opacity:0.4;
+        transform:scale(1);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.2);
+    }
+
+    100%{
+        opacity:0.4;
+        transform:scale(1);
+    }
+
+}
