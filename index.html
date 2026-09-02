@@ -1,87 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Um Céu Cheio de Memórias ✨</title>
+    <title>Nossas Estrelas</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body> 
-    <div class="lua"></div>
-    <div class="estrela-cadente"></div>
+<body>
 
-<div class="inicio" id="inicio">
+    <!-- Tela Inicial -->
+    <section id="inicio">
 
-    <h1>Um Céu Cheio de Memórias ✨</h1>
+        <h1>Uma pequena viagem pelo nosso céu ✨</h1>
 
-    <p>
-        Existem lugares que a distância não alcança.
-    </p>
+        <button id="btnComecar">
+            Começar
+        </button>
 
-    <p>
-        As lembranças são um deles.
-    </p>
+    </section>
 
-  <button onclick="entrar()">
-    Explorar o céu ✨
-</button>
-</div>
-    <div class="introducao" id="introducao">
+    <!-- Tela das estrelas -->
+    <section id="ceu" class="escondido">
 
-    <p id="frase">
-        Toda estrela deste céu guarda uma lembrança...
-    </p>
+    </section>
 
-</div>
-<div class="pagina2" id="pagina2">
+    <script src="script.js"></script>
 
-    <div class="estrela-memoria" onclick="abrirMemoria()">
-        ⭐
-    </div>
+</body>
 
-    <p class="instrucao">
-        Clique na estrela para descobrir a primeira lembrança.
-    </p>
-
-</div>
-    <div class="popup" id="popup">
-
-    <div class="popup-conteudo">
-
-        <span class="fechar" onclick="fecharMemoria()">✕</span>
-
-        <h2>⭐ Onde tudo começou...</h2>
-
-        <p>
-            Talvez você nem imagine o quanto aquele ano mudou a minha vida.
-        </p>
-
-        <p>
-            O CRE já tinha colocado nossos caminhos próximos,
-            mas foi no passeio para o Animalia Park que alguma coisa começou a mudar.
-        </p>
-
-        <p>
-            A gente foi juntas no ônibus, conversou, riu...
-            E você insistiu em falar comigo.
-        </p>
-
-        <p>
-            Ainda bem que insistiu.
-        </p>
-
-        <p class="frase-final">
-            Toda grande amizade começa com um pequeno momento. ✨
-        </p>
-
-    </div>
-
-</div>
-<script src="script.js"></script>
-
-</body> 
-    
 </html>
